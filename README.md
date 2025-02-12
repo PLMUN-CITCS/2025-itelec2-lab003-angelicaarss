@@ -1,7 +1,7 @@
-# 2025-ITELEC2-LAB003
+# 2025-ITELEC2-WK02S01E01
 Week 02 - Python Variables, Operators and I/O Statements
 
-Laboratory # 03 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
+Exercise # 01 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
 
 ## **Instructions**
 
@@ -77,7 +77,7 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Laboratory # 03 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)**
+**Exercise # 01 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)**
 
    **Objective:**
    This exercise aims to solidify your understanding of variable declaration, data types (integers, floats, and strings), the crucial concept of case-sensitivity in Python, and best practices for variable naming. You will learn how to create variables, assign values of different types, observe how Python distinguishes between variables based on their case, and write code that is more readable and maintainable.
@@ -85,128 +85,89 @@ Only perform this if this is the first time you will setup your Git Environment
    **Desired Output:**
    ```txt
    Integer (count): 10
-   Integer (Count): 15
    Integer (total_count): 20
    Decimal: 3.14
    Text: Hello, Python!
    Boolean: True
    None Value: None
    ```
-   *Note: The output now includes two variables—count and Count—to clearly demonstrate Python’s case-sensitivity.*
-
-   **Folder Structure and Naming Conventions**
-   - Required Filename: exercise_01.py
-   - Location: Save this file in the root directory of your project or designated repository folder.
-   - Header Comments: Include your name, course code (e.g., ITELEC2), and a brief description of the exercise at the top of your script.
-
    **Notable Observations (to be discussed after completing the exercise):**
-- Case-Sensitivity: Python distinguishes between identifiers by case. For instance, count and Count are two completely different variables.
-- Literals vs. Variables: 
-   - Literals are the direct values written in the code (e.g., 10, 3.14, "Hello, Python!").
-   - Variables are names that store these values, and they can be reassigned over time.
-- f-strings and Inline Arithmetic: f-strings allow you to embed expressions directly within string literals. For example:
-   ```python
-   print(f"Sum: {num1 + num2:.2f}")
-   ```
-   Here, num1 + num2 is calculated on the fly, and the result is formatted to two decimal places using the :.2f specifier.
-- Variable Naming: Consistent and descriptive variable names enhance code clarity. This exercise reinforces the importance of following Python naming conventions (using snake_case, avoiding reserved keywords, etc.).
+   - Python is case-sensitive. count and total_count are treated as distinct variables.
+   - Variable names can be assigned and reassigned. The last assignment to a variable is the value it holds.
+   - Different data types are used to represent different kinds of data (numbers vs. text).
+   - Following naming conventions makes code more readable and understandable.
 
-   **Python Best Practices for Variable Naming**
-   - Descriptive Names: Use clear and descriptive names (e.g., count, total_count, decimal_value) rather than single-letter names, unless in short loops or temporary contexts.
-   - Snake Case Convention: Adopt snake_case (all lowercase with underscores) for variable names, which is standard in Python.
-   - Avoid Reserved Keywords: Never use Python’s reserved words (such as if, else, while, for) as variable names.
-   - Consistency: Maintain consistency in your naming conventions throughout your codebase.
-   - Valid Naming Rules: Variable names should start with a letter or an underscore and can include numbers after the first character.
-
-****
+   **Best Practices for Variable Naming:**
+   - Descriptive Names: Choose names that clearly indicate the variable's purpose (e.g., count instead of x, total_price instead of tp).
+   - Lowercase with Underscores (Snake Case): Use lowercase letters and separate words with underscores (e.g., total_count, item_name, user_age). This is the most common and recommended convention in Python.
+   - Avoid Single-Character Names (except for very short loops): Unless you're using a variable in a very limited scope (like a loop counter i), avoid single-letter names like a, b, or x. Descriptive names are much better.
+   - Be Consistent: Stick to one naming convention throughout your code.
+   - Avoid Reserved Keywords: Don't use Python's reserved keywords (e.g., for, while, if, else, print, class, def) as variable names.
+   - Start with a Letter or Underscore: Variable names must start with a letter (a-z, A-Z) or an underscore (_). They cannot start with a number.
+   - Can Contain Numbers: After the first character, variable names can contain letters, underscores, and numbers.
+   
+   **Literals:**
+   A literal is a raw value that is directly written in the code. It represents a fixed value.
+   - Examples:
+      - 10 (integer literal)
+      - 3.14 (floating-point literal)
+      - "Hello, Python!" (string literal)
+      - True (boolean literal)
+      - None (None literal)
    
    **Step-by-Step Instructions:**
 
-   1. Setup:
-   - Open your preferred Python environment or text editor.
-   - Create a new Python script named exercise_01.py.
-   - Create Header Comments: At the top of the file, include your details
-   ```python
-   # Your Name
-   # ITELEC2
-   # Laboratory #03 – Guided Coding Exercise:
-   # Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
-   
-   ```
+   1. Setting up: Open your preferred Python environment or Text Editor, and create a Python Script.
+      - Required Filename: `exercise_01.py`
       
-   2. Declare Variables with Numeric Literals:
-   - Create a variable named count and assign it the integer literal 10.
-   - To demonstrate case-sensitivity, create another variable named Count (with an uppercase "C") and assign it the integer literal 15.
-   - Create a variable named decimal_value and assign it the floating-point literal 3.14.
-   ```python
-   count = 10                   # 'count' is assigned 10 (integer literal)
-   Count = 15                   # 'Count' (different from 'count') is assigned 15
-   decimal_value = 3.14         # 'decimal_value' is assigned 3.14 (float literal)
-   ```
+   3. Create variables with numeric literals:
+      - Declare a variable named `count` and assign it the integer literal `10`.
+      - Declare another variable named `decimal_value` and assign it the floating-point literal `3.14`.
+         ```python
+         count = 10                  # 10 is an integer literal
+         decimal_value = 3.14        # 3.14 is a float literal
+         ```
       
-   3. Declare a Variable with a String Literal:
-   - Create a variable named message and assign it the string literal "Hello, Python!"
-   ```python
-   message = "Hello, Python!"   # String literal
-   ```
+   4. Create a variable with a string literal:
+      - Declare a variable named `message` and assign it the string literal `"Hello, Python!"`.
+         ```python
+         message = "Hello, Python!"   # "Hello, Python!" is a string literal
+         ```
 
-   4. Declare a Variable with a Boolean Literal:
-   - Create a variable named is_active and assign it the boolean literal True.
-   ```python
-   is_active = True             # Boolean literal
-   ```
+   5. Create a variable with a boolean literal:
+      - Declare a variable named `is_active` and assign it the boolean literal `True`.
+         ```python
+         is_active = True              # True is a boolean literal
+         ```
 
-   5. Declare a Variable with the None Literal:
-   - Create a variable named result and assign it the None literal.
-   ```python
-   result = None                # None literal represents absence of value
-   ```
+   6. Create a variable with the None literal:
+      - Declare a variable named result and assign it the `None` literal. `None` represents the absence of a value.
+         ```python
+         result = None                # None is the None literal
+         ```
 
-   6. Additional Variable Assignment:
-   - Create a variable named total_count and assign it the integer literal 20
-   ```python
-   total_count = 20             # Another integer literal assignment
-   ```
+   7. Demonstrate case-sensitivity and reassignment:
+      - Reassign the variable count to a new value (e.g., 10).
+      - Declare a new variable named total_count and assign it a different value (e.g., 20).
+         ```python
+         count = 10                    # or any integer literal
+         total_count = 20              # or any other integer literal
+         ```
 
-   7. Display the Variable Values:
-   - Use the print() function to output each variable with descriptive labels.
-   - Additionally, demonstrate inline arithmetic using f-strings:
-   ```python
-   print("Integer (count):", count)
-   print("Integer (Count):", Count)
-   print("Integer (total_count):", total_count)
-   print("Decimal:", decimal_value)
-   print("Text:", message)
-   print("Boolean:", is_active)
-   print("None Value:", result)
-   
-   # Example of inline arithmetic with formatting using an f-string:
-   num1 = 5
-   num2 = 3
-   print(f"Sum: {num1 + num2:.2f}")  # The result (8.00) is formatted to 2 decimal places
-   ```
+   8. Display the values:
+      - Use the print() function to display the values of all variables, including the boolean and None variables. Include descriptive labels.
+         ```python
+         print("Integer (count):", count)
+         print("Integer (total_count):", total_count)
+         print("Decimal:", decimal_value)
+         print("Text:", message)
+         print("Boolean:", is_active)
+         print("None Value:", result)
+         ```
          
-   8. Run the code:
-   - Save the file and execute your script in the terminal:
-   ```bash
-   python exercise_01.py
-   ```
-   - Verify that your output matches the desired output specified above.
-
-   9. Observe the output: Compare your output with the "Desired Output" shown above.
-   10. Discussion and Reflection:
-   - Review how count and Count are treated as two separate variables due to Python's case-sensitivity.
-   - Discuss the distinction between literals and variables: literals are fixed values, while variables serve as placeholders that can be reassigned.
-   - Reflect on the power of f-strings to compute expressions inline and apply format specifiers for a clean output.
-   - Emphasize the importance of following consistent naming conventions for readability and maintenance.
-
-**Conclusion**
-By completing this exercise, you will have:
-- Developed a solid understanding of variable declaration and the assignment of literals in Python.
-- Demonstrated the concept of case-sensitivity by using similar identifiers that differ only in case.
-- Gained experience in using Python’s f-strings to perform inline arithmetic operations with format specifiers.
-- Adopted best practices for naming variables to ensure your code is clear, readable, and maintainable.
-- Reflected on the importance of distinguishing between literals and variables, which is crucial for writing robust Python programs.
+   9. Run the code: Execute your Python code.
+   10. Observe the output: Compare your output with the "Desired Output" shown above.
+   11. Discussion (Notable Observations):  Discuss the same points as before, and discuss the concept of literals.  How are they different from variables?  Why are they important?  Give examples of different types of literals.
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
