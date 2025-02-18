@@ -1,4 +1,5 @@
 count = 10                  # 10 is an integer literal
+Count = 15
 decimal_value = 3.14        # 3.14 is a float literal
 
 message = "Hello, Python!"   # "Hello, Python!" is a string literal
